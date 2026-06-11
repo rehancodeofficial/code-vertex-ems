@@ -31,6 +31,7 @@ function Dashboard() {
 }
 
 function AdminDashboard() {
+  const user = useAuth((s) => s.user)!;
   const activeEmps = employees.filter((e) => e.status === "active").length;
   const presentToday = attendance.filter((a) => a.date === attendance[0]?.date && a.status === "present").length;
   const attendanceRate = Math.round((presentToday / Math.max(employees.length, 1)) * 100);
