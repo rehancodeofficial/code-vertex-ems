@@ -3045,6 +3045,14 @@
   ],
   "auditLogs": [
     {
+      "id": "au-1781174103637-s3a3",
+      "actor": "Admin Vertex",
+      "action": "LOGIN",
+      "target": "Workplace login",
+      "timestamp": "2026-06-11T10:35:03.637Z",
+      "ip": "—"
+    },
+    {
       "id": "au1",
       "actor": "Sana Mirza",
       "action": "UPDATE",
