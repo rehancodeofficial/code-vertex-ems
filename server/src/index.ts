@@ -8,8 +8,8 @@ const app = createApp();
 const server = http.createServer(app);
 initRealtime(server);
 
-server.listen(config.PORT, () => {
-  console.log(`VertexEMS API listening on http://localhost:${config.PORT}`);
+server.listen(config.PORT, "0.0.0.0", () => {
+  console.log(`VertexEMS API listening on http://0.0.0.0:${config.PORT}`);
 });
 
 async function shutdown(signal: string) {
